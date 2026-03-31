@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" width="760" height="180">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f472b6"/>
+      <stop offset="100%" style="stop-color:#db2777"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="760" height="180" fill="url(#bgGrad)" rx="8"/>
+  <rect x="0" y="0" width="760" height="2" fill="url(#accent)" opacity="0.7"/>
+  <rect x="0" y="178" width="760" height="2" fill="url(#accent)" opacity="0.4"/>
+
+  <!-- Browser window / remote desktop icon -->
+  <g transform="translate(90, 88)" filter="url(#glow)">
+    <!-- Browser frame -->
+    <rect x="-32" y="-36" width="64" height="48" rx="4" fill="none" stroke="#f472b6" stroke-width="2"/>
+    <!-- Title bar -->
+    <line x1="-32" y1="-24" x2="32" y2="-24" stroke="#f472b6" stroke-width="1" opacity="0.5"/>
+    <!-- Title bar dots -->
+    <circle cx="-24" cy="-30" r="2" fill="#f472b6" opacity="0.5"/>
+    <circle cx="-17" cy="-30" r="2" fill="#f472b6" opacity="0.4"/>
+    <circle cx="-10" cy="-30" r="2" fill="#f472b6" opacity="0.3"/>
+    <!-- Desktop content (Kali dragon silhouette simplified) -->
+    <path d="M-8,-12 C-4,-18 4,-18 8,-12 C12,-6 10,2 6,6 L-6,6 C-10,2 -12,-6 -8,-12Z" fill="none" stroke="#f472b6" stroke-width="1" opacity="0.4"/>
+    <!-- Connection arrow -->
+    <line x1="0" y1="16" x2="0" y2="28" stroke="#f472b6" stroke-width="1.5" opacity="0.6"/>
+    <polyline points="-5,23 0,28 5,23" fill="none" stroke="#f472b6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+    <!-- VNC label -->
+    <text x="0" y="40" font-family="'Courier New', monospace" font-size="8" fill="#f472b6" text-anchor="middle" opacity="0.5">VNC</text>
+  </g>
+
+  <!-- Accent divider -->
+  <line x1="155" y1="40" x2="155" y2="145" stroke="#f472b6" stroke-width="1" opacity="0.2"/>
+
+  <!-- Title -->
+  <text x="170" y="68" font-family="'Courier New', Courier, monospace" font-size="30" font-weight="bold" fill="#f472b6" filter="url(#glow)">YesNoVNC</text>
+
+  <!-- Subtitle -->
+  <text x="172" y="95" font-family="'Courier New', Courier, monospace" font-size="13" fill="#8b949e">One-Command noVNC Setup for Kali Linux</text>
+
+  <!-- Description -->
+  <text x="172" y="120" font-family="'Courier New', Courier, monospace" font-size="11" fill="#484f58">TightVNC + noVNC  ·  Blank-screen fix  ·  Browser-based remote desktop</text>
+
+  <!-- Badges -->
+  <g font-family="'Courier New', Courier, monospace" font-size="9.5" font-weight="700">
+    <rect x="172" y="134" width="42" height="16" rx="3" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+    <text x="193" y="146" fill="#f472b6" text-anchor="middle">bash</text>
+    <rect x="220" y="134" width="48" height="16" rx="3" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+    <text x="244" y="146" fill="#6b7280" text-anchor="middle">noVNC</text>
+    <rect x="274" y="134" width="36" height="16" rx="3" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+    <text x="292" y="146" fill="#6b7280" text-anchor="middle">Kali</text>
+  </g>
+
+  <!-- Author -->
+  <text x="172" y="166" font-family="'Courier New', Courier, monospace" font-size="11" fill="#484f58">SkyzFallin</text>
+</svg>
