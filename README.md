@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.svg" alt="YesNoVNC Banner" width="100%"/>
+</p>
+
 # YesNoVNC
 
 One-command noVNC setup for Kali Linux. Get browser-based remote desktop access in under a minute.
