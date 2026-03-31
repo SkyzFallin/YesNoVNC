@@ -2,6 +2,12 @@
   <img src="banner.svg" alt="YesNoVNC Banner" width="100%"/>
 </p>
 
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+![noVNC](https://img.shields.io/badge/noVNC-1D9BF0?style=flat-square&logo=vnc&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![Author](https://img.shields.io/badge/Author-SkyzFallin-ce9178?style=flat-square&logo=github&logoColor=white)
+
 # YesNoVNC
 
 One-command noVNC setup for Kali Linux. Get browser-based remote desktop access in under a minute.
